@@ -10,7 +10,7 @@ xxl: >= 1400px;
 BODY {
   background-color: rgb(24, 24, 24);
   /* background-color: rgba(0, 0, 0, 0.795); */
-  background-image: url("resources/bg-dark.png");
+  background-image: url("img/bg-dark.png");
   /* background-size: 15%; */
   background-repeat: repeat;
   color: white;
