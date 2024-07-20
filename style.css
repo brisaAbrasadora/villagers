@@ -1,17 +1,27 @@
+/* 
+xsm: < 567px;
+sm: >= 567px
+md: >= 768px;
+lg: >= 992px;
+xl: >= 1200px;
+xxl: >= 1400px;
+ */
+
 BODY {
   background-color: rgb(24, 24, 24);
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-SECTION#bottom-line {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+#bottom-line {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 10px;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
-  DIV {
+
+  SECTION {
     margin: 0 20px;
     display: flex;
     flex-direction: column;
@@ -49,14 +59,35 @@ SECTION#bottom-line {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  width: 50%;
 }
 
 .villager {
   text-align: center;
-  margin-top: auto;
-  padding: 10px;
+  margin: 5px;
   H3 {
-    margin: 10px 0;
+    margin-top: 0px;
+  }
+}
+
+.testing {
+  border: 1px dashed white;
+}
+
+@media screen and (max-width: 567px) {
+  #bottom-line {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .villager {
+    margin: 5px;
+    & > img {
+      width: 5em;
+    }
   }
 }
