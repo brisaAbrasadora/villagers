@@ -9,6 +9,10 @@ xxl: >= 1400px;
 
 BODY {
   background-color: rgb(24, 24, 24);
+  /* background-color: rgba(0, 0, 0, 0.795); */
+  background-image: url("resources/bg-dark.png");
+  /* background-size: 15%; */
+  background-repeat: repeat;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -64,7 +68,8 @@ BODY {
 .villager {
   text-align: center;
   margin: 5px;
-  H3 {
+
+  p {
     margin-top: 0px;
   }
 }
@@ -74,6 +79,9 @@ BODY {
 }
 
 @media screen and (max-width: 567px) {
+  BODY {
+    background-size: 70%;
+  }
   #bottom-line {
     width: 100%;
     margin: 0;
@@ -81,13 +89,18 @@ BODY {
   }
 
   .grid-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
   }
 
   .villager {
     margin: 5px;
+    &:last-child{
+      grid-column: 2;
+    }
+    
     & > img {
-      width: 5em;
+      width: 6em;
     }
   }
 }
