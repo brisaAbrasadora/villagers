@@ -1,4 +1,4 @@
-# Villagers Tracking
+# ACNH Villagers Tracking
 ![Static Badge](https://img.shields.io/badge/Side-project-yellow)
 ![Static Badge](https://img.shields.io/badge/HTML-grey)
 ![Static Badge](https://img.shields.io/badge/CSS-grey)
@@ -11,7 +11,7 @@ They also had to keep count of how many days passed without a bubble, or without
 
 To help them accomplish it, I made this little tool with the icons of their villagers.
 
-You can visit it on its [GitHub Page](https://brisaabrasadora.github.io/villagers/)
+You can visit it on its [GitHub Page](https://brisaabrasadora.github.io/acnh-villagers-tracking/)
 ## How to use it
 The idea is simple: you see your villager in-game, and if it doesn't have any thought bubble, you click or tap on its icon
 on the tool, and keep going. If anybody has it, add one to the counter on the left. Additionaly, if nobody came to the campfire
